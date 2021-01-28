@@ -1,7 +1,16 @@
+@import "./resets";
+@import "./variables";
 @import "./colors";
 @import "./darkmode";
 @import "./header";
 @import "./navbar";
+
+@mixin theme($dark-theme: true) {
+    @if $dark-theme {
+        background: darken($headerColor, 60%);
+        color: white;
+    }
+}
 
 body, h1, article{
     margin: 0;
@@ -35,6 +44,10 @@ section{
 footer{
     @extend header;
     font-size: 50px;
+}
+
+.dark{
+    @include theme($dark-theme: true);
 }
 
 

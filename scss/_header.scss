@@ -1,14 +1,8 @@
-header, nav, footer{
+header{
+    font-size: 10vh;
     grid-column: 1/3;
-}
-
-header, nav, section, aside, footer{
     margin: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-}
-
-header{
-    font-size: 10vh;
 }
